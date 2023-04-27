@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Weather API</title>
+	<link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAA9/8AAAAAAPrVrAD/RAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAERExETMREREzETMREzERERMxEzERMxERETERMzETMRERMxERMRExERETMREzETMRERExERMRExEiIiIiIiIiISIRESIREiEhEhEREREREQESIREREREiEBEiERERIiEQERIiIiIRERAREREREAERABERERERAAABERERERERERH3PwAAM58AAJnPAADcZwAAz3cAAOczAAD3uwAAAAEAADzlAAC//QAAn/IAAM/GAADgPgAA/5wAAP/BAAD//wAA" rel="icon" type="image/x-icon" />
+	<script>
+		function choosePlace() {
+			const url = document.getElementById("selectList").value;
+			window.location = url;
+		}
+	</script>
+</head>
+<body>
+    <header class="banner">
+		
+		<nav class="navigation" id="panelOne">
+			
+			<a href="index.html"><span id="home">Welcome to Weather API with Hotel Booking</span></a>
+			
+
+		</nav>
+		
+
+		<nav id="panelTwo">
+			
+			<span class="close">&times;</span>
+
+			<a href="index.html"><span id="home">Welcome to Weather API with Hotel Booking</span></a>
+			
+
+		</nav>
+
+	
+
+		
+
+	</header>
+	
+
+	<form>
+		<select id="selectList" name="list">
+			<option value="" selected>Choose CIty Here</option>
+			<option value="bulacan.html">Marilao, Phillipines</option>
+			<option value="paris.html">Paris, France</option>
+			<option value="tokyoJap.html">Tokyo, Japan</option>
+			<option value="california.html">California, USA</option>
+			
+		</select>
+		<button type="button" value="Go" onclick="choosePlace()">Choose Place</button>
+	</form>
+    
+</body>
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Ritchimondo hoteru Tōkyō Suidōbashi</title>
+	
+
+	<script>
+		function choosePlace() {
+			const url = document.getElementById("selectList").value;
+			window.location = url;
+		}
+	</script>
+
+	<link rel="stylesheet" type="text/css" href="styleJap.css">
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAABVq//pVar//1Wq//9Vqv//Var//1Wq//9Vqv//Var//1Wq//9Vqv//Var//1Wq//9Vqv//Var//1Wq//9Vq//pVar//1Wq//9Vqv//Var//1Wq//9Vqv//Var//1Wq//9Vqv//Var//1Wq//9Vqv//Var//1Wq//9Vqv//Var//1Wq//9Vqv//Var//1Wq//9Vqv//Var//1Wq//9Vqv//Var//1Wq//9Vqv//Var//1Wq//9Vqv//Var//1Wq//9Vqv//Var//1Wq//9Vqv//Var//1Wq//9Vqv//AAAA/wAAAP9Vqv//Var//1Wq//9Vqv//Var//1Wq//9Vqv//Var//1Wq//9Vqv//Var//1Wq//9Vqv//Var//1Wq//8AAAD/Var//1Wq//9Vqv//Var//1Wq//9Vqv//Var//1Wq//9Vqv//Var//1Wq//9Vqv//Var//1Wq//9Vqv//Bw4V/w8eLv9Vqv//Var//1Wq//9Vqv//Var//1Wq//9Vqv//Var//1Wq//9Vqv//Var//1Wq//9Vqv//Var//wwXI/8UKDv/Var//1Wq//9Vqv//Var//1Wq//9Vqv//Var//1Wq//9Vqv//Var//1Wq//9Vqv//Var//1Wq//8JERn/GTJL/1Wq//9Vqv//Var//1Wq//9Vqv//Var//1Wq//9Vqv//Var//1Wq//9Vqv//Var//1Wq//9Vqv//Bg0T/xQoO/9Vqv//Var//1Wq//9Vqv//Var//1Wq//9Vqv//Var//1Wq//9Vqv//Var//1Wq//9Vqv//Var//wUKD/8PHSz/Var//1Wq//9Vqv//Var//1Wq//9Vqv//Var//1Wq//9Vqv//Var//1Wq//9Vqv//Var//1Wq//8ECAz/ChMd/1Wq//9Vqv//Var//1Wq//9Vqv//Var//1Wq//9Vqv//Var//1Wq//9Vqv//Var//1Wq//9Vqv//AwUI/wcNFP9Vqv//Var//1Wq//9Vqv//Var//1Wq//9Vqv//Var//1Wq//9Vqv//Var//1Wq//9Vqv//UKDv/wIDBP8GCxH/Var//1Wq//9Vqv//Var//1Wq//9Vqv//Var//1Wq//9Vqv//Var//1Wq//9Vqv//LVqH/wkTHP8JExz/Dhwq/1Wq//9Vqv//Var//1Wq//9Vqv//Var//1Wq//9Vqv//Var//1Wq//9Vqv//Var//1Wq//9Vqv//Var//1Wq//9Vqv//Var//1Wq//9Vqv//Var//1Wq//9Vq//pVar//1Wq//9Vqv//Var//1Wq//9Vqv//Var//1Wq//9Vqv//Var//1Wq//9Vqv//Var//1Wq//9Vq//pAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==" rel="icon" type="image/x-icon" />
+	
+	
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+	<header class="banner">
+		
+		<nav class="navigation" id="panelOne">
+			
+			<a href="tokyoJap.html"><span id="home">家</span></a>
+			<a href="#about-section"><span id="about">だいたい</span></a>
+			<a href="#gallery-section"><span id="gallery">ギャラリー</span></a>
+			<a href="#review-section"><span id="review">ゲストレビュー</span></a>
+			<a href="#contact-section"><span id="contact">コンタクト</span></a>
+			<a href="book-modaljap.html"><span id="book">今予約する</span></a>
+
+		</nav>
+		
+		<nav class="navBar">
+			
+			<button id="bar"><i class="fa fa-bars fa-2x" id="bar"></i></button>
+			<a href="book-modaljap.html"><span id="book" class="bookMe">今予約する</span></a>
+
+		</nav>
+
+		<nav id="panelTwo">
+			
+			<span class="close">&times;</span>
+
+			<a href="tokyoJap.html"><span id="home">家</span></a>
+			<a href="#about-section"><span id="about">だいたい</span></a>
+			<a href="#gallery-section"><span id="gallery">ギャラリー</span></a>
+			<a href="#review-section"><span id="review">ゲストレビュー</span></a>
+			<a href="#contact-section"><span id="contact">コンタクト</span></a>
+			<a href="book-modaljap.html"><span id="bookTwo">I今予約する</span></a>
+
+		</nav>
+
+		<div class="business">
+			
+			<p id="negi">Ritchimondo hoteru Tōkyō Suidōbashi</p>
+			<hr class="line"><p id="rent">ホテルとレストラン</p><hr class="line">
+
+		</div>
+
+	</header>
+
+	<section>
+		<!---weather app-->
+		<div class="card">
+			<div class="container">
+				<div class="search">
+					<select class="search-bar" id="selectList" name="list">
+					
+					<option value="bulacan.html">Marilao, Phillipines</option>
+					<option value="paris.html">Paris France</option>
+					<option value="tokyo" selected>Tokyo, Japan</option>
+					<option value="california.html">California, USA</option>
+					
+					
+					
+					</select>
+					<button type="button" value="Go" onclick="choosePlace()">Search</button>
+						
+					
+				</div>
+			</div>
+			<br>
+		
+			<div class="container">
+				<div class="form">
+					<div class="weather">
+						<div class="weather-detail">
+							
+							<h2 class="city"></h2>
+							<div class="iconDescription">
+							<p class="description"></p>
+							<img src="" alt="" class="icon">
+							</div>
+							<p class="temp"></p>
+							<p class="humidity"></p>
+							<p class="wind"></p>
+							
+						</div>
+				   </div>
+				</div>
+			</div>
+			</div>
+			<script src="weather.js"></script>
+		
+		
+		<div class="cover"></div> <!-- Image inserted through CSS. -->
+			
+		<div class="services">
+			
+			<div class="service1">
+				
+				<i class="fa fa-wifi fa-2x"></i>
+				<p>無料Wi-Fi</p>
+
+			</div>
+
+			<div class="service2">
+				
+				<i class="fa fa-bed fa-2x"></i>
+				<p>家具付き</p>
+
+			</div>
+
+			<div class="service3">
+				
+				<i class="fa fa-motorcycle fa-2x"></i>
+				<p>二輪車用駐車場g</p>
+
+			</div>
+
+		</div>
+
+		<div id="about-section">
+			
+			<h3 id="about-head">About</h3>
+
+			<p id="about-description">リッチモンドホテル東京水道橋は、東京ドームシティからわずか5分の場所にあり、船遊びと遊園地を楽しむことができます。
+                JR総武線、都営地下鉄三田線、東京メトロ丸ノ内線の3路線利用可能。
+                東京都心まで約10分。</p>
+
+		</div>
+
+		<div class="slider" id="gallery-section">
+			
+			<div class="slide" id="slide-1"></div>
+			<div class="slide" id="slide-2"></div>
+			<div class="slide" id="slide-3"></div>
+			<div class="slide" id="slide-4"></div>
+			<div class="slide" id="slide-5"></div>
+			
+		</div>
+		
+		<p id="Scroll">横にスクロールして詳細をご覧ください。</p>
+
+		<div id="review-section">
+			
+			<h3 id="review-head">Gesutorebyū(ゲストレビュー)</h3>
+			
+			<div class="review-subhead">
+
+				<div class="review1">
+
+					<h3 class="reviewer">Asahi Chiyo(朝日千代)</h3>
+
+					<p class="comment">“温かく親切なスタッフ、広々とした部屋と設備”</p>
+
+				</div>
+
+				<div class="review2">
+
+					<h3 class="reviewer">Uzumaki Sasuke(うずまきサスケ)</h3>
+
+					<p class="comment">“施設はきれいで、ホテルはたくさんのお店や遊園地にも近いです！ベッドは快適です。”</p>
+
+				</div>
+
+				<div class="review3">
+
+					<h3 class="reviewer">Uchi wa sakura(うちはサクラ)</h3>
+
+					<p class="comment">“Tada neru dake no bashodeshitaga, totemo yokattadesu.”</p>
+
+				</div>
+				
+			</div>
+
+		</div>
+
+	</section>
+
+	<footer>
+
+		<div id="contact-section">
+			
+			<h3 id="contact-head">O toiawase(お問い合わせ)</h3>
+
+			<p id="phone"><i class="bi bi-telephone-inbound-fill"></i> Tenwabangō(電話番号):+81-35-803-2155</p>
+			<p id="address">Jūsho(住所):Tōkyōto bunkyōkuhongō 1 - 33 - 9(東京都文京区本郷1-33-9)</p>
+
+			<a href="https://www.google.com/maps/place/Richmond+Hotel+Tokyo+Suidobashi/@35.7061133,139.7523347,16.88z/data=!4m9!3m8!1s0x60188c38fe1d361f:0x22f1647770f41847!5m2!4m1!1i2!8m2!3d35.7061506!4d139.7545447!16s%2Fg%2F11b5vthzr7" target="_blank"><div id="map"></div></a>
+			
+		</div>
+
+		<div class="rights">
+			
+			<p id="Copyright">&copy; Ritchimondo hoteru Tōkyō Suidōbashi 2023| 全著作権所有. によって開発された <a href="https://fritzdelacruz.github.io/weather-api/" target="_blank" id="portfolio">フリッツとダーヴズ</a>.</p>
+		
+		</div>
+
+	</footer>
+	
+	<script type="text/javascript" src="script.js"></script>
+	
+	<!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "102129782811123");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v16.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/ja_JP/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+	
+	
+
+</body>
+
+</html>
